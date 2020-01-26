@@ -1,0 +1,208 @@
+
+
+@keyframes shadowTitre{
+    from {
+        text-shadow: 0px 0px 0px black;
+    }
+    16% {
+        text-shadow: 0px px 1em #F70505;
+    }
+    32% {
+        text-shadow: 0px 0px 1em orange;
+    }
+    48% {
+        text-shadow: 0px 0px 1em #F70505;
+    }
+    64% {
+        text-shadow: 0px 0px 1em #54C40A;
+    }
+    64% {
+        text-shadow: 0px 0px 1em #190AC4;
+    }
+    80% {
+        text-shadow: 0px 0px 1em #8F0AC4;
+    }
+    to {
+        text-shadow: 0px 0px 0px transparent;
+    }
+}
+
+@keyframes texteClignotant{
+    from{
+        color: rgb(0,0,0);  
+    }
+    25%{
+        color: rgb(0,0,0);
+    }
+    50%{
+        color: rgb(0,0,0);
+    }
+    75%{
+        color: rgb(0,0,0);
+    }
+    to{
+        color: rgb(0,0,0);
+    }
+}
+/*--------------------------body---------------------------------------------------------------------------------------------------------------------------*/
+body, html{
+    margin: 0px;
+    padding: 0px;
+    background-color: #000000;
+}
+html>#wrapper{
+    margin: 0px;
+}
+/*----------------le conteneur principal------------------------------------------------------------------------------------------------------------------*/
+#wrapper{
+    position: static;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+#monGif{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: static;
+}
+#wrapper >*{
+    float: left;
+}
+/*-----------------l'entête------------------------------------------------------------------------------------------------------------------------------*/
+
+h1 a{
+    text-decoration: none;
+    color: black;
+    margin: auto;
+    animation-name: shadowTitre;
+    animation-duration: 10s;	
+}
+h1 a:hover{
+    animation-name: texteClignotant;
+    animation-duration: 3s;
+}
+h1 {
+    font-size: 4em;
+    font-family: policePerso;
+    font-weight: lighter;
+    position: absolute;
+    top: 350px;
+    left: 0px;
+    padding-left: 30%;
+    margin: auto;
+    text-align: justify;
+}
+
+/*----------------menu de navigation------------------------------------------------------------------------------------------------------------------------*/
+a {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: white;
+
+}
+#lienAccueil{
+    width: 100%;
+    height: 30px;
+}
+#menuNav{
+    position: absolute;
+    left: 0px;
+    top: 20%;
+    width: 100%;
+    height: 50px;
+    background-color: #333333;
+    opacity: 0.5;
+    filter: alpha(opacity=50);/* For IE8 and earlier */
+}
+
+#menuNav  li{   
+    display: inline-block;
+    margin-left: 6.5%;
+    margin-right: 6.5%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+#menuNav a{
+    text-decoration: none;
+}
+#menuNav ul{
+    text-align: center;
+    //animation-name: shadowTitre;
+    //animation-duration: 10s;	
+}
+#menuNav a:hover{
+    color: black;
+    //font-size: 1.5em;
+}
+
+/*----------------------footer-------------------------------------------------------------------------------------------------------------------------------*/
+#piedPage{
+    border-bottom: #666666 inset thin;
+    width: 100%;
+    height: 25px;	
+    background-color: black;
+    vertical-align: middle;
+}
+#piedPage>*{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+#monFooter{
+    width: 50%;
+    height: 25px;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+}
+#monFooter>*{
+    float: left;
+    margin: auto;
+
+}
+.icone{
+    width: 25%;
+    height: 25px;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 0px;
+}
+a{
+    text-decoration: none; 
+}
+h6{   
+    text-align: center;
+    vertical-align: middle;
+    height: 25px;
+    width: auto;
+    color: #ffffff;
+}
+
+/*-----------------liens  externes-----------------*/
+#lienExterne{
+    height: auto;
+    width: 70px;
+    position: fixed;
+    bottom: 50px;
+    right: 0px;
+    margin-right: 0px;
+}
+#lienExterne > *{
+    float: left;
+}
+#lienExterne img{
+    width: 70px;
+    height: 50px;
+}
+
+#lienExterne img:hover{
+    transform: translate(-100px, 0px);
+    width: 170px;
+}
+#lienExterne div{
+    margin: 0px;
+}
+
+
