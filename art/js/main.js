@@ -33,7 +33,7 @@ var images = [image1, image2, image3, image4, image5, image6, image7, image8, im
 
 var step = 0;
 function slider(){
-	if(step<=8){
+	if(step<=7){
 	document.getElementById('slide1').src = images[step].src;
 	document.getElementById('slide2').src = images[step+1].src;
 	document.getElementById('slide3').src = images[step+2].src;
