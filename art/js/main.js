@@ -40,6 +40,9 @@ function slider(){
 	document.getElementById('slide4').src = images[step+3].src;
 	document.getElementById('slide5').src = images[step+4].src;
 	document.getElementById('slide6').src = images[step+5].src;
+        document.getElementById('slide7').src = images[step+6].src;
+	document.getElementById('slide8').src = images[step+7].src;
+	document.getElementById('slide9').src = images[step+8].src;
 	step++;
 	}
 	if(step>4){
